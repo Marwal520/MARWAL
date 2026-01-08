@@ -60,9 +60,9 @@ header p{
 
 .product img{
     width:100%;
-    height:auto; /* عشان تظهر كاملة */
-    max-height:300px; /* لتكون متناسقة */
-    object-fit:contain; /* تظهر الصورة كاملة بدون قص */
+    height:auto; /* تظهر كاملة */
+    max-height:300px;
+    object-fit:contain; /* بدون قص */
     border-radius:10px;
 }
 
@@ -74,11 +74,19 @@ header p{
     font-size:1.2em;
 }
 
-.product .price{
+.product .price-old{
+    font-weight:700;
+    color:#555;
+    font-size:1.1em;
+    margin-top:5px;
+    text-decoration: line-through; /* خط على السعر القديم */
+}
+
+.product .price-new{
     font-weight:700;
     color:#233416; /* زيتي غامق */
     font-size:1.1em;
-    margin-top:5px;
+    margin-top:2px;
 }
 
 .product .details{
@@ -151,7 +159,8 @@ footer{
     <div class="product">
         <img src="https://i.postimg.cc/65S7dqS6/Picsart-24-12-13-17-10-16-383.jpg" alt="FLORA wall hanging">
         <h3>FLORA Wall Hanging</h3>
-        <p class="price">1500 EGP → 1200 EGP</p>
+        <p class="price-old">1500 EGP</p>
+        <p class="price-new">1200 EGP</p>
         <p class="details">
             Measurements: 100×110cm<br>
             Color: Pure creamy white<br>
